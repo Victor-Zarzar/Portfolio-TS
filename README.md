@@ -23,5 +23,4 @@
 - For the stack:
 - make down
 
-
-![portfolio](https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/dd8ac09b-390c-4a0a-927e-933291320b03)
+![portfolio](https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/ff95345f-fa91-43b3-943f-19908f143a6a)
