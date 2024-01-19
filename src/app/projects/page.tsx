@@ -70,18 +70,18 @@ export default function Projects() {
           <CarouselContent className="-ml-1">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
+                <div className="p-2">
                   <Card>
                     <div
                       onClick={() => handleImageClick(project.sourceCodeLink)}
-                      style={{ cursor: 'pointer' }}>
+                      className="cursor-pointer">
                       <CardContent className="flex aspect-square items-center justify-center p-6">
                         <Image
                           src={project.photo}
                           alt={project.title}
-                          width={400}
-                          height={400}
-                          className='h-full w-full'
+                          width={600}
+                          height={600}
+                          className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] lg:w-[18rem] lg:h-[18rem] absolute"
                         />
                       </CardContent>
                     </div>
