@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import Header from "./Header";
 import Skills from "./Skills";
 import { usePathname } from 'next/navigation';
-import Projects from "./Projects";
 interface ThemeProps {
     body: string;
 }
@@ -29,7 +28,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const showSkills = pathname === "/";
     const showHeader = pathname === "/";
-    const showProjects = pathname === "/";
 
     return (
         <ThemeProvider theme={theme === "dark" ? light : dark}>
@@ -38,7 +36,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {showHeader && <Header />}
             {children}
             {showSkills && <Skills theme={theme} />}
-            {showProjects && <Projects theme={theme} />}
             <Footer theme={theme} />
         </ThemeProvider>
     );

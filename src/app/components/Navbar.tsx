@@ -24,6 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme }) => {
   const Links = [
     { name: "Home", link: "/" },
     { name: "About me", link: "about" },
+    { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];
   const [open, setOpen] = useState(false);
