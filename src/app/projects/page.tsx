@@ -66,7 +66,7 @@ export default function Projects() {
         </div>
       </div>
       <div>
-        <Carousel className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl mx-auto mb-48 md:mb-32">
+        <Carousel className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto mb-48 md:mb-32">
           <CarouselContent className="-ml-1">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
@@ -81,7 +81,7 @@ export default function Projects() {
                           alt={project.title}
                           width={600}
                           height={600}
-                          className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] lg:w-[18rem] lg:h-[18rem] absolute"
+                          className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] lg:w-[18rem] lg:h-[18rem] xl:w-[23rem] xl:h-[23rem] absolute"
                         />
                       </CardContent>
                     </div>

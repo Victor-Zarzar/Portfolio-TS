@@ -4,7 +4,6 @@ import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import Link from "next/link";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button"
@@ -154,14 +153,11 @@ const ContactMe = (_props: Props) => {
                             required
                             ref={messageInputRef}
                             onClick={() => focusInput(messageInputRef)} />
-                        <div className="container-button relative inline-flex">
-                            <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
-                            <Button type='submit' className='relative mx-auto w-[23rem] md:w-[27rem] text-[10px] md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Submit</Button>
-                        </div>
+                        <Button type='submit' className='inline-block px-12 h-12 w-auto py-3 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>Submit</Button>
                     </form>
                 </div>
             </div>
-            <div className="mx-auto mt-0 mb-8 text-center text-white items-center">
+            <div className="mx-auto mt-0 mb-20 text-center text-white items-center">
                 <ul className="flex justify-center mt-0 space-x-5">
                     <li>
                         <a href="https://facebook.com/victorzarzar58" target="_blank" className="text-gray-500 hover:text-gray-400 dark:hover:text-white dark:text-gray-400" rel="noreferrer">
@@ -200,14 +196,6 @@ const ContactMe = (_props: Props) => {
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div className="py-8 z-10 font-serif mt-14 mb-10 flex items-center justify-center">
-                <div className="container-button relative inline-flex group max-w-6xl mb-2">
-                    <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
-                    <Link href="/">
-                    <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[8rem] md:w-[10rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Back To Home Page</Button>
-                    </Link>
-                </div>
             </div>
         </>
     );

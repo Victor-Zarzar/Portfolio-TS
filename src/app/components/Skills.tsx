@@ -119,7 +119,7 @@ export default function Skills({ theme }: SkillsProps) {
                             <LineColor />
                         </Card>
                     </div>
-                    <div className="mx-auto mt-28 mb-14 text-center text-white items-center">
+                    <div className="mx-auto mt-28 mb-20 text-center text-white items-center">
                         <ul className="flex justify-center mt-0 space-x-5">
                             <li>
                                 <a href="https://facebook.com/victorzarzar58" target="_blank" className="text-gray-500 hover:text-gray-400 dark:hover:text-white dark:text-gray-400" rel="noreferrer">

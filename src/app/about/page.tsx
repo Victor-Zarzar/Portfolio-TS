@@ -8,7 +8,6 @@ import { FaDev } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from "@/components/ui/button"
 
 export default function About() {
   return (
@@ -162,7 +161,7 @@ export default function About() {
               <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">EN - Basic</span>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex mb-20">
             <div className="flex items-center mx-auto mt-5">
               <Image
                 src="/br.png"
@@ -174,15 +173,6 @@ export default function About() {
               />
               <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">PT-BR - Native Speaker</span>
             </div>
-          </div>
-        </div>
-        <div className="py-8 z-10 font-serif mt-20 mb-8 flex items-center justify-center">
-          <div className="container-button relative inline-flex group max-w-6xl mb-2">
-            <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
-            </div>
-            <Link href="/">
-              <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[8rem] md:w-[10rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Back To Home Page</Button>
-            </Link>
           </div>
         </div>
       </div>
