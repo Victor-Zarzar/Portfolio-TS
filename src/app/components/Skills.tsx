@@ -6,6 +6,8 @@ import FlutterIcon from '../icons/flutter';
 import DockerIcon from '../icons/docker';
 import { Fade } from 'react-awesome-reveal';
 import clsx from 'clsx';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import LineColor from './LineColor';
 
 interface SkillsProps {
     theme: string;
@@ -13,7 +15,7 @@ interface SkillsProps {
 
 export default function Skills({ theme }: SkillsProps) {
 
-    const SkillsClasses = clsx("rounded-2xl p-4 transform translate-x-6 -translate-y-6", {
+    const SkillsClasses = clsx("rounded-xl border-3 p-0 transform translate-x-6 -translate-y-6 h-[25rem] w-[16rem] md:h-[26rem] md:w-80 mx-auto", {
         'bg-gray-800': theme === 'light',
         'bg-gray-400': theme === 'dark',
     });
@@ -63,76 +65,59 @@ export default function Skills({ theme }: SkillsProps) {
                             </ul>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8 mr-8 md:mr-0 mx-auto">
-                        <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
-                            <div className="pattern-dots-md gray-light">
-                                <div className={SkillsClasses}>
-                                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
-                                        <ReactIcon />
-                                    </div>
-                                    <div className="flex-grow h-[20rem] w-[15rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
-                                        <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                        <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Front End</h2>
-                                        <ul className="text-sm text-justify">
-                                            <li className="mb-2">HTML</li>
-                                            <li className="mb-2">Tailwind CSS</li>
-                                            <li className="mb-2">Styled Components</li>
-                                            <li className="mb-2">Javascript</li>
-                                            <li className="mb-2">React</li>
-                                            <li className="mb-2">TypeScript</li>
-                                            <li className="mb-2">Next.js</li>
-                                            <li className="mb-2">Cypress</li>
-                                            <li className="mb-2">Fast API - Swagger</li>
-                                            <li className="mb-2">Postman</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
-                            <div className="pattern-dots-md gray-light">
-                                <div className={SkillsClasses}>
-                                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
-                                        <FlutterIcon />
-                                    </div>
-                                    <div className="flex-grow h-[20rem] w-[15rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
-                                        <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                        <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Mobile</h2>
-                                        <ul className="text-sm text-justify">
-                                            <li className="mb-2">Dart</li>
-                                            <li className="mb-2">Flutter</li>
-                                            <li className="mb-2">Android Studio</li>
-                                            <li className="mb-2">Xcode</li>
-                                            <li className="mb-2">Firebase</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
-                            <div className="pattern-dots-md gray-light">
-                                <div className={SkillsClasses}>
-                                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
-                                        <DockerIcon />
-                                    </div>
-                                    <div className="flex-grow h-[20rem] w-[15rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
-                                        <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                        <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Technologies</h2>
-                                        <ul className="text-sm text-justify">
-                                            <li className="mb-2">Docker</li>
-                                            <li className="mb-2">Docker Compose</li>
-                                            <li className="mb-2">Git</li>
-                                            <li className="mb-2">GitHub</li>
-                                            <li className="mb-2">GitLab</li>
-                                            <li className="mb-2">Visual Studio Code</li>
-                                            <li className="mb-2">Linux</li>
-                                            <li className="mb-2">macOS</li>
-                                            <li className="mb-2">Windows</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto mt-20 gap-y-10 p-2 md:p-4 lg:p-5 mr-8 md:mr-0'>
+                        <Card className={SkillsClasses}>
+                            <CardHeader>
+                                <ReactIcon />
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Front End</CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-sm text-white'>
+                                <p className='mb-1'>HTML</p>
+                                <p className='mb-1'>Tailwind CSS</p>
+                                <p className='mb-1'>Styled Components</p>
+                                <p className='mb-1'>React</p>
+                                <p className='mb-1'>TypeScript</p>
+                                <p className='mb-1'>Next.js</p>
+                                <p className='mb-1'>Cypress</p>
+                                <p className='mb-1'>Fast API - Swagger</p>
+                                <p className='mb-1'>Postman</p>
+                            </CardContent>
+                            <LineColor />
+                        </Card>
+                        <Card className={SkillsClasses}>
+                            <CardHeader>
+                                <FlutterIcon />
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Mobile</CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-sm text-white'>
+                                <p className='mb-1'>Dart</p>
+                                <p className='mb-1'>Flutter</p>
+                                <p className='mb-1'>Android Studio</p>
+                                <p className='mb-1'>React</p>
+                                <p className='mb-1'>Xcode</p>
+                                <p className='mb-1'>Firebase</p>
+                            </CardContent>
+                            <LineColor />
+                        </Card>
+                        <Card className={SkillsClasses}>
+                            <CardHeader>
+                                <DockerIcon />
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Technologies</CardTitle>
+                            </CardHeader>
+                            <CardContent className='text-sm text-white'>
+                                <p className='mb-1'>Docker</p>
+                                <p className='mb-1'>Docker Compose</p>
+                                <p className='mb-1'>Git</p>
+                                <p className='mb-1'>React</p>
+                                <p className='mb-1'>GitHub</p>
+                                <p className='mb-1'>GitLab</p>
+                                <p className='mb-1'>Visual Studio Code</p>
+                                <p className='mb-1'>Linux</p>
+                                <p className='mb-1'>macOS</p>
+                                <p className='mb-1'>Windows</p>
+                            </CardContent>
+                            <LineColor />
+                        </Card>
                     </div>
                 </div>
             </div>

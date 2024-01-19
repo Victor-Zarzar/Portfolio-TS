@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Fade } from 'react-awesome-reveal';
 import clsx from 'clsx';
 import { Button } from '@/components/ui/button';
+import LineColor from './LineColor';
 
 interface ProjectsProps {
     theme: string;
@@ -94,7 +95,7 @@ export default function Projects({ theme }: ProjectsProps) {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></div>
+                                <LineColor />
                             </div>
                         ))}
                     </div>

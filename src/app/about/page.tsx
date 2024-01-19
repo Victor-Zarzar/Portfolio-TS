@@ -43,13 +43,13 @@ export default function About() {
           <div className="flex">
             <div className="flex items-center mx-auto mt-10">
               <FaBug className="w-5 h-4 md:w-8 md:h-6 text-gray-500" />
-              <span className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">QA Tester - Freelancer - December 2022 - March 2023</span>
+              <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">QA Tester - Freelancer - December 2022 - March 2023</span>
             </div>
           </div>
           <div className="flex">
             <div className="flex items-center mx-auto mt-5">
               <FaDev className="w-5 h-4 md:w-8 md:h-6 text-gray-500" />
-              <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Software Developer JR - March 2023 - Present</span>
+              <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Software Developer JR - March 2023 - Present</span>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function About() {
         <div className="flex">
           <div className="flex items-center mx-auto mt-10">
             <IoSchool className="w-5 h-4 md:w-8 md:h-6 text-gray-500" />
-            <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Analysis and systems development - Ampli/SP</span>
+            <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Analysis and systems development - Ampli/SP</span>
           </div>
         </div>
       </div>
