@@ -79,6 +79,14 @@ export default function About() {
         </div>
         <div className="flex">
           <div className="flex items-center mx-auto mt-10">
+            <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">TypeScript from basic to advanced (with React, Express)</span>
+            <Link href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f24a0556-951a-47d6-b5ad-da2a2aec098c.pdf" target="_blank">
+              <TbFileDownload className='w-5 h-4 md:w-8 md:h-6 text-gray-500' />
+            </Link>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="flex items-center mx-auto mt-10">
             <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Zero to Programmer in just 14 classes. Dart and Flutter</span>
             <Link href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-6f719ab9-4c08-4a91-8b85-f4a2a698d472.pdf" target="_blank">
               <TbFileDownload className='w-5 h-4 md:w-8 md:h-6 text-gray-500' />

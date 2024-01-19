@@ -1,10 +1,15 @@
 'use client'
-import { Card, CardContent } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Card, CardContent } from "@/components/ui/card"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel"
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
-import LineColor from '../components/LineColor';
 import Image from 'next/image';
+
+type Project = {
+    title: string;
+    description: string;
+    photo: string;
+};
 
 export default function ProjectsPage() {
 
@@ -13,7 +18,7 @@ export default function ProjectsPage() {
     const mario = '/mario.png';
     const gpt = '/gpt.png';
 
-    const projects = [
+    const projects: Project[] = [
         {
             title: "Music Player",
             description:
@@ -61,16 +66,16 @@ export default function ProjectsPage() {
                 </div>
             </div>
             <div>
-                <Carousel className="w-full max-w-[17rem] md:max-w-md mx-auto mb-44">
-                    <CarouselContent>
-                        {Array.from({ length: 4 }).map((_, index) => (
-                            <CarouselItem key={index}>
+                <Carousel className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl mx-auto mb-32">
+                    <CarouselContent className="-ml-1">
+                        {projects.map((project, index) => (
+                            <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card>
                                         <CardContent className="flex aspect-square items-center justify-center p-6">
                                             <Image
-                                                src={projects[index].photo}
-                                                alt={projects[index].title}
+                                                src={project.photo}
+                                                alt={project.title}
                                                 width={600}
                                                 height={100}
                                                 className='h-full w-full'
@@ -81,7 +86,6 @@ export default function ProjectsPage() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <LineColor />
                     <CarouselPrevious />
                     <CarouselNext />
                 </Carousel>
