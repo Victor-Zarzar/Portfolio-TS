@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Slide } from "react-awesome-reveal";
+import { Button } from "@/components/ui/button"
 
 export default function Header() {
     return (
@@ -30,10 +31,10 @@ export default function Header() {
                 <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
                 </div>
                 <Link href="https://github.com/Victor-Zarzar" target="_blank">
-                    <button className="relative inline-flex items-center justify-center w-[6rem] md:w-[8rem] lg:w-[9rem] text-xs md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">GitHub</button>
+                <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[7rem] md:w-[9rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>GitHub</Button>
                 </Link>
                 <Link href="https://www.linkedin.com/in/victorzarzar" target="_blank">
-                    <button className="relative inline-flex items-center justify-center w-[6rem] md:w-[8rem] lg:w-[9rem] text-xs md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Linkedin</button>
+                <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[7rem] md:w-[9rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Linkedin</Button>
                 </Link>
             </div>
         </div>

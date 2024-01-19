@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import { Fade } from 'react-awesome-reveal';
 import clsx from 'clsx';
+import { Button } from '@/components/ui/button';
 
 interface ProjectsProps {
     theme: string;
@@ -89,7 +90,7 @@ export default function Projects({ theme }: ProjectsProps) {
                                         <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
                                         </div>
                                         <a href={sourceCodeLinks[index]} target="_blank" rel="noreferrer">
-                                            <button className="relative inline-flex items-center justify-center w-[8rem] md:w-[8rem] text-[9px] md:text-[9px] px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Source Code</button>
+                                        <Button type='button' className='relative inline-flex items-center justify-center h-[2.6rem] w-[7rem] sm:w-[8rem] md:w-[8rem] text-[9px] md:text-[10px] px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Source Code</Button>
                                         </a>
                                     </div>
                                 </div>

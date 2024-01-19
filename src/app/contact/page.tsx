@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import Link from "next/link";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import { Button } from "@/components/ui/button"
 
 type Props = {};
 
@@ -155,22 +156,7 @@ const ContactMe = (_props: Props) => {
                             onClick={() => focusInput(messageInputRef)} />
                         <div className="container-button relative inline-flex">
                             <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
-                            <motion.button
-                                initial={{
-                                    x: 100,
-                                    opacity: 0,
-                                }}
-                                whileInView={{
-                                    x: 0,
-                                    opacity: 1,
-                                }}
-                                transition={{
-                                    duration: 1,
-                                }}
-                                type="submit"
-                                className="relative mx-auto w-[23rem] md:w-[27rem] text-[10px] md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                                Submit
-                            </motion.button>
+                            <Button type='submit' className='relative mx-auto w-[23rem] md:w-[27rem] text-[10px] md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Submit</Button>
                         </div>
                     </form>
                 </div>
@@ -219,9 +205,7 @@ const ContactMe = (_props: Props) => {
                 <div className="container-button relative inline-flex group max-w-6xl mb-2">
                     <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
                     <Link href="/">
-                        <button className="relative inline-flex items-center justify-center w-[10rem] md:w-[12rem] lg:w-[13rem] text-[10px] md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">
-                            Back to Home Page
-                        </button>
+                    <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[8rem] md:w-[10rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Back To Home Page</Button>
                     </Link>
                 </div>
             </div>

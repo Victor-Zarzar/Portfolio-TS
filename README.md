@@ -11,6 +11,7 @@
 - Email JS
 - Docker
 - Docker-Compose
+- Lib Shadcn UI 
 
 ### How to install:
 
