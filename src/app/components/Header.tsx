@@ -28,13 +28,11 @@ export default function Header() {
                 </div>
             </div>
             <div className="container-button relative inline-flex group ml-6 md:ml-0 lg:ml-20 xl:ml-36 2xl:ml-96 space-x-5">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
-                </div>
                 <Link href="https://github.com/Victor-Zarzar" target="_blank">
-                <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[7rem] md:w-[9rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>GitHub</Button>
+                    <Button type='button' className='inline-block px-12 py-3 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>GitHub</Button>
                 </Link>
                 <Link href="https://www.linkedin.com/in/victorzarzar" target="_blank">
-                <Button type='button' className='relative inline-flex items-center justify-center h-[2.8rem] w-[7rem] md:w-[9rem] text-[10px] md:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 hover:bg-neutral-700 font-pj rounded-lg'>Linkedin</Button>
+                    <Button type='button' className='inline-block px-12 py-3 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>Linkedin</Button>
                 </Link>
             </div>
         </div>
