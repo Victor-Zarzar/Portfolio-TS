@@ -7,6 +7,7 @@ import { FaBug } from "react-icons/fa";
 import { FaDev } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function About() {
   return (
@@ -20,14 +21,10 @@ export default function About() {
             <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
             </div>
           </div>
-          <Image
-            src="/profile.jpg"
-            alt="profile"
-            width={200}
-            height={200}
-            priority
-            className="w-40 h-40 md:w-72 md:h-72 bg-gray-300 rounded-full mb-4 shrink-0 mx-auto mt-14"
-          />
+          <Avatar className='w-40 h-40 md:w-72 md:h-72 bg-gray-300 rounded-full mb-4 shrink-0 mx-auto mt-14'>
+            <AvatarImage src="profile.jpg" />
+            <AvatarFallback>VZ</AvatarFallback>
+          </Avatar>
           <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-10">
             My first contact with programming was in 2009, using SQL-SERVER 2000 & My SQL technologies, creating, restoring and editing databases, and creating sites in PHP.
             Always looking to improve my knowledge daily, Im not afraid of the unknown, I try to evolve every day, new challenges are welcome.
@@ -137,7 +134,7 @@ export default function About() {
         </div>
         <div className="rounded-lg p-6 mt-20">
           <Fade>
-          <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h2>
+            <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h2>
           </Fade>
           <div className="flex mt-6 justify-center">
             <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
