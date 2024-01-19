@@ -161,7 +161,7 @@ export default function About() {
               <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">EN - Basic</span>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex mb-20">
             <div className="flex items-center mx-auto mt-5">
               <Image
                 src="/br.png"
