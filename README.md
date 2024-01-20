@@ -24,6 +24,7 @@
 - For the stack:
 - make down
 
-![Screenshot 2024-01-19 at 10 02 58](https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/f06aa811-dffd-46b4-b31c-001958e70338)
+![Screenshot 2024-01-20 at 01 04 13](https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/b6d7591d-3c6b-489e-a410-a71f2f421020)
+
 
 
