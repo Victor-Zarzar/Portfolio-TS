@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme }) => {
           ))}
           <li className="md:ml-3 md:my-0 my-1">
             <button
-              className="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="h-12 w-12 rounded-lg p-2 dark:hover:bg-gray-700"
               onClick={() => {
                 setTheme((prevTheme: string) => (prevTheme === "light" ? "dark" : "light"));
               }}>

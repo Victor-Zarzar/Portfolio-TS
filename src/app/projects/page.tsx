@@ -47,10 +47,6 @@ export default function Projects() {
     },
   ];
 
-  const handleImageClick = (link: string) => {
-    window.open(link, '_blank');
-  };
-
   return (
     <div>
       <div className="col-span-4 mx-auto">
