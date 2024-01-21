@@ -69,9 +69,9 @@ export default function Skills({ theme }: SkillsProps) {
                         <Card className={SkillsClasses}>
                             <CardHeader>
                                 <ReactIcon />
-                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Front End</CardTitle>
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-blue-500'>Front End</CardTitle>
                             </CardHeader>
-                            <CardContent className='text-sm text-white'>
+                            <CardContent className='text-sm text-violet-700 font-semibold'>
                                 <p className='mb-1'>HTML</p>
                                 <p className='mb-1'>Tailwind CSS</p>
                                 <p className='mb-1'>Styled Components</p>
@@ -87,9 +87,9 @@ export default function Skills({ theme }: SkillsProps) {
                         <Card className={SkillsClasses}>
                             <CardHeader>
                                 <FlutterIcon />
-                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Mobile</CardTitle>
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-blue-500'>Mobile</CardTitle>
                             </CardHeader>
-                            <CardContent className='text-sm text-white'>
+                            <CardContent className='text-sm text-violet-700 font-semibold'>
                                 <p className='mb-1'>Dart</p>
                                 <p className='mb-1'>Flutter</p>
                                 <p className='mb-1'>Android Studio</p>
@@ -102,9 +102,9 @@ export default function Skills({ theme }: SkillsProps) {
                         <Card className={SkillsClasses}>
                             <CardHeader>
                                 <DockerIcon />
-                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-white'>Technologies</CardTitle>
+                                <CardTitle className='text-lg md:text-lg lg:text-xl title-font font-medium mb-3 text-blue-500'>Technologies</CardTitle>
                             </CardHeader>
-                            <CardContent className='text-sm text-white'>
+                            <CardContent className='text-sm text-violet-700 font-semibold'>
                                 <p className='mb-1'>Docker</p>
                                 <p className='mb-1'>Docker Compose</p>
                                 <p className='mb-1'>Git</p>

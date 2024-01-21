@@ -92,10 +92,10 @@ export default function Projects() {
                           </CardContent>
                         </div>
                       </PopoverTrigger>
-                      <PopoverContent className="w-60 md:w-80 bg-gray-800">
+                      <PopoverContent className="w-60 md:w-80 bg-gray-800 border-3">
                         <div className="space-y-2">
-                          <h4 className="font-medium leading-none text-sm text-white">{project.title}</h4>
-                          <p className="text-xs text-muted-foreground text-white">
+                          <h4 className="font-medium leading-none text-sm md:text-md text-blue-500 title-font">{project.title}</h4>
+                          <p className="text-xs md:text-sm text-violet-700 font-semibold">
                             {project.description}
                           </p>
                           <a href={project.sourceCodeLink} target="_blank" className="text-gray-500 hover:text-gray-400 dark:hover:text-white dark:text-gray-400" rel="noreferrer">
