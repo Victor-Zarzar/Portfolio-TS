@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import ReactIcon from '../icons/react';
-import FlutterIcon from '../icons/flutter';
-import DockerIcon from '../icons/docker';
-import SoftIcon from '../icons/soft';
 import clsx from 'clsx';
+import DockerIconSkill from '../icons/skills/docker';
+import FlutterIconSkill from '../icons/skills/flutter';
+import SoftIconSkill from '../icons/skills/soft';
+import ReactIconSkill from '../icons/skills/react';
 interface SkillsProps {
     theme: string;
 }
@@ -18,10 +18,10 @@ type Skills = {
 };
 
 const skillIcons: Record<string, React.JSX.Element> = {
-    "Front End": <ReactIcon />,
-    "Mobile": <FlutterIcon />,
-    "Technologies": <DockerIcon />,
-    "Soft Skills": <SoftIcon />,
+    "Front End": <ReactIconSkill />,
+    "Mobile": <FlutterIconSkill />,
+    "Technologies": <DockerIconSkill />,
+    "Soft Skills": <SoftIconSkill />,
 };
 
 export default function Skills({ theme }: SkillsProps) {

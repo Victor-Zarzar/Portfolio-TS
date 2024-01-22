@@ -5,10 +5,23 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import Image from 'next/image';
+import TypescriptIcon from "../icons/projects/typescript";
+import HtmlIcon from "../icons/projects/html";
+import NextjsIcon from "../icons/projects/nextjs";
+import DartIcon from "../icons/projects/dart";
+import FlutterIcon from "../icons/projects/flutter";
+import TailwindIcon from "../icons/projects/tailwindcss";
+import ReactIcon from "../icons/projects/react";
+import DockerIcon from "../icons/projects/docker";
+import AndroidIcon from "../icons/projects/android";
+import IosIcon from "../icons/projects/ios";
+import StripeIcon from "../icons/projects/stripe";
+import PrismaIcon from "../icons/projects/prisma";
+import StyledIcon from "../icons/projects/styled";
 
 type Project = {
   title: string;
-  description: string;
+  description: string | JSX.Element;
   photo: string;
   sourceCodeLink: string;
 };
@@ -24,31 +37,88 @@ export default function Projects() {
   const projects: Project[] = [
     {
       title: "Music Player",
-      description: "A Flutter music player app.",
+      description: (
+        <div>
+          <p className="mb-3">A Flutter music player app.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+          </div>
+        </div>
+      ),
       photo: musicplayer,
       sourceCodeLink: "https://github.com/Victor-Zarzar/musicplayer-flutter",
     },
     {
       title: "KeyMart E-commerce",
-      description: "Application fullstack e-commerce website built with TypeScript / NextJS / Vercel Postgres / Stripe Payment / Prisma / Clerk.",
+      description: (
+        <div>
+          <p className='mb-3'>Application fullstack e-commerce website.</p>
+          <div className="flex space-x-1 md:space-x-2">
+            <HtmlIcon />
+            <ReactIcon />
+            <TypescriptIcon />
+            <TailwindIcon />
+            <NextjsIcon />
+            <DockerIcon />
+            <StripeIcon />
+            <PrismaIcon />
+          </div>
+        </div>
+      ),
       photo: ecommerce,
       sourceCodeLink: "https://github.com/Victor-Zarzar/e-commerce-ts",
     },
     {
       title: "Portfolio",
-      description: "My personal portfolio website built with TypeScript/NextJS.",
+      description: (
+        <div>
+          <p className='mb-3'>My personal portfolio website.</p>
+          <div className="flex space-x-1 md:space-x-2">
+            <HtmlIcon />
+            <ReactIcon />
+            <TypescriptIcon />
+            <TailwindIcon />
+            <NextjsIcon />
+            <DockerIcon />
+            <StyledIcon />
+          </div>
+        </div>
+      ),
       photo: portfolio,
       sourceCodeLink: "https://github.com/Victor-Zarzar/portfolio-ts",
     },
     {
       title: "Mario Jump",
-      description: "A Super Mario game built with Flutter.",
+      description: (
+        <div>
+          <p className="mb-3">A Super Mario game built with Flutter.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+          </div>
+        </div>
+      ),
       photo: mario,
       sourceCodeLink: "https://github.com/Victor-Zarzar/SuperMario-Flutter",
     },
     {
       title: "ChatGPT",
-      description: "A project involving ChatGPT.",
+      description: (
+        <div>
+          <p className="mb-3">A project involving ChatGPT.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+          </div>
+        </div>
+      ),
       photo: gpt,
       sourceCodeLink: "https://github.com/Victor-Zarzar/chat-gpt",
     },
@@ -98,9 +168,9 @@ export default function Projects() {
                       <PopoverContent className="w-60 md:w-80 bg-gray-800 border-3">
                         <div className="space-y-2">
                           <h4 className="font-medium leading-none text-sm md:text-md text-blue-500 title-font">{project.title}</h4>
-                          <p className="text-xs md:text-sm text-violet-700 font-semibold">
+                          <div className="text-xs md:text-sm text-violet-700 font-semibold">
                             {project.description}
-                          </p>
+                          </div>
                           <a href={project.sourceCodeLink} target="_blank" className="text-gray-500 hover:text-gray-400 dark:hover:text-white dark:text-gray-400" rel="noreferrer">
                             <svg className="h-8 w-8 md:w-10 md:h-10 lg:w-10 lg:h-10 mx-auto mt-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                               <path fillRule="evenodd"
