@@ -16,6 +16,7 @@ type Project = {
 export default function Projects() {
 
   const musicplayer = '/musicplayer.jpg';
+  const ecommerce = '/e-commerce.png'
   const portfolio = '/portfolio.png';
   const mario = '/mario.png';
   const gpt = '/gpt.png';
@@ -26,6 +27,12 @@ export default function Projects() {
       description: "A Flutter music player app.",
       photo: musicplayer,
       sourceCodeLink: "https://github.com/Victor-Zarzar/musicplayer-flutter",
+    },
+    {
+      title: "KeyMart E-commerce",
+      description: "Application fullstack e-commerce website built with TypeScript / NextJS / Vercel Postgres / Stripe Payment / Prisma / Clerk.",
+      photo: ecommerce,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/e-commerce-ts",
     },
     {
       title: "Portfolio",

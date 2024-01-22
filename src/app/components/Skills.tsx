@@ -82,6 +82,7 @@ export default function Skills({ theme }: SkillsProps) {
             title: "Soft Skills",
             description: (
                 <div>
+                    <p className='mb-1'>Agile methodologies</p>
                     <p className='mb-1'>Team work</p>
                     <p className='mb-1'>Constant evolution</p>
                     <p className='mb-1'>Curious</p>
