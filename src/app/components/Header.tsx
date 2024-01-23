@@ -27,12 +27,12 @@ export default function Header() {
                     />
                 </div>
             </div>
-            <div className="container-button relative inline-flex group ml-6 md:ml-0 lg:ml-20 xl:ml-36 2xl:ml-96 space-x-5">
+            <div className="container-button max-w-[19rem] md:max-w-sm lg:max-w-md xl:max-w-[44rem] text-right space-x-4">
                 <Link href="https://github.com/Victor-Zarzar" target="_blank">
-                    <Button type='button' className='inline-block px-12 py-2 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>GitHub</Button>
+                    <Button type='button' className='inline-block px-10 md:px-12 py-2 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>GitHub</Button>
                 </Link>
                 <Link href="https://www.linkedin.com/in/victorzarzar" target="_blank">
-                    <Button type='button' className='inline-block px-12 py-2 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>Linkedin</Button>
+                    <Button type='button' className='inline-block px-10 md:px-12 py-2 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>Linkedin</Button>
                 </Link>
             </div>
         </div>
