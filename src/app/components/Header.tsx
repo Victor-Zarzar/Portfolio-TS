@@ -12,7 +12,7 @@ export default function Header() {
                 <div className="w-full md:w-1/2 py-8">
                     <Slide>
                         <h1 className="text-purple-900 text-2xl md:text-3xl lg:text-4xl font-semibold leading-none tracking-tighter">
-                            Welcome to <p className="text-blue-500">My Portfolio, </p> I´am Web/Mobile Developer🖖🏻.
+                            Welcome to <p className="text-blue-500">My Portfolio, </p> I´am Software Developer🖖🏻.
                         </h1>
                     </Slide>
                 </div>

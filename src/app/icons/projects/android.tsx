@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AndroidIcon() {
     return (
-        <svg width="25px" height="25px" viewBox="-3 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='h-[20px] w-[20px] md:h-[25px] md:w-[25px]'>
+        <svg width="25px" height="25px" viewBox="-3 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='h-[25px] w-[25px] md:h-[30px] md:w-[30px]'>
             <title>Android-color</title>
             <desc>Created with Sketch.</desc>
             <defs>
