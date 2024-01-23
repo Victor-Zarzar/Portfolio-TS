@@ -1,15 +1,15 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Portfolio Victor Zarzar TS - NextJS',
-};
+'use client'
+import React from 'react';
+import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 export default function App() {
 
   return (
     <main>
-      <link rel="shortcut icon" href="./favicon.ico"></link>
+        <Header />
+        <link rel="shortcut icon" href="./favicon.ico"></link>
+        <Skills />
     </main>
   )
 }

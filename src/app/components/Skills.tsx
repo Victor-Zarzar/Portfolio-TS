@@ -3,14 +3,10 @@ import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import clsx from 'clsx';
 import DockerIconSkill from '../icons/skills/docker';
 import FlutterIconSkill from '../icons/skills/flutter';
 import SoftIconSkill from '../icons/skills/soft';
 import ReactIconSkill from '../icons/skills/react';
-interface SkillsProps {
-    theme: string;
-}
 
 type Skills = {
     title: string;
@@ -24,12 +20,7 @@ const skillIcons: Record<string, React.JSX.Element> = {
     "Soft Skills": <SoftIconSkill />,
 };
 
-export default function Skills({ theme }: SkillsProps) {
-
-    const SkillsClasses = clsx("p-6 bg-gray-800 h-[22rem] md:h-[25rem]", {
-        'bg-gray-800': theme === 'light',
-        'bg-gray-400': theme === 'dark',
-    });
+export default function Skills() {
 
     const skills: Skills[] = [
         {
@@ -148,7 +139,7 @@ export default function Skills({ theme }: SkillsProps) {
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card className='border-3'>
-                                        <CardContent className={SkillsClasses}>
+                                        <CardContent className="p-6 bg-gray-800 h-[22rem] md:h-[25rem]">
                                             {skillIcons[Skill.title]}
                                             <p className="font-medium leading-none text-sm md:text-lg text-blue-500 title-font mb-6">{Skill.title}</p>
                                             <div className="text-xs md:text-sm text-violet-700 font-semibold">

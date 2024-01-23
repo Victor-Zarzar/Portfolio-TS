@@ -3,9 +3,6 @@ import React, { useState } from "react";
 import { ThemeProvider, createGlobalStyle, DefaultTheme } from "styled-components";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Header from "./Header";
-import Skills from "./Skills";
-import { usePathname } from 'next/navigation';
 interface ThemeProps {
     body: string;
 }
@@ -25,17 +22,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         body: "#111827"
     };
 
-    const pathname = usePathname();
-    const showSkills = pathname === "/";
-    const showHeader = pathname === "/";
-
     return (
         <ThemeProvider theme={theme === "dark" ? light : dark}>
             <GlobalStyle theme={theme === "dark" ? light : dark} />
             <Navbar theme={theme} setTheme={setTheme} />
-            {showHeader && <Header />}
             {children}
-            {showSkills && <Skills theme={theme} />}
             <Footer theme={theme} />
         </ThemeProvider>
     );

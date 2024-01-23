@@ -1,6 +1,12 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Layout from './components/Layout';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description: 'Portfolio Victor Zarzar TS - NextJS',
+};
 
 const inter = Inter({ subsets: ['latin'] });
 
