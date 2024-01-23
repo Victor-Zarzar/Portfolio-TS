@@ -1,6 +1,6 @@
 # My Portfolio (Migrate Application)
 
-## Stack: 
+## ⚒️ Stack: 
 
 - TypeScript
 - React
