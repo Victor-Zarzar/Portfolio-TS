@@ -1,87 +1,36 @@
 import React from 'react'
 import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
-import { Card, CardContent } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import DockerIconSkill from '../icons/skills/docker';
-import FlutterIconSkill from '../icons/skills/flutter';
-import SoftIconSkill from '../icons/skills/soft';
-import ReactIconSkill from '../icons/skills/react';
+import {
+    SiVisualstudiocode,
+    SiGit,
+    SiGithub,
+    SiNextdotjs as SiNextJs,
+    SiReact,
+    SiTailwindcss as SiTailwindCSS,
+    SiTypescript,
+    SiJavascript,
+    SiHtml5,
+    SiNpm,
+    SiDocker,
+    SiFlutter,
+    SiDart,
+    SiPostman,
+    SiSwagger,
+    SiVite,
+    SiJest,
+    SiGitlab,
+    SiAndroidstudio,
+    SiXcode,
+    SiFirebase,
+    SiLinux,
+    SiMacos,
+    SiWindows,
+} from "react-icons/si";
+import { TechItem } from "../components/TechItem";
 
-type Skills = {
-    title: string;
-    description: string | JSX.Element;
-};
-
-const skillIcons: Record<string, React.JSX.Element> = {
-    "Front End": <ReactIconSkill />,
-    "Mobile": <FlutterIconSkill />,
-    "Technologies": <DockerIconSkill />,
-    "Soft Skills": <SoftIconSkill />,
-};
 
 export default function Skills() {
-
-    const skills: Skills[] = [
-        {
-            title: "Front End",
-            description: (
-                <div>
-                    <p className='mb-1'>HTML</p>
-                    <p className='mb-1'>Tailwind CSS</p>
-                    <p className='mb-1'>Styled Components</p>
-                    <p className='mb-1'>React</p>
-                    <p className='mb-1'>TypeScript</p>
-                    <p className='mb-1'>Next.js</p>
-                    <p className='mb-1'>Cypress</p>
-                    <p className='mb-1'>Fast API - Swagger</p>
-                    <p className='mb-1'>Postman</p>
-                </div>
-            ),
-        },
-        {
-            title: "Mobile",
-            description: (
-                <div>
-                    <p className='mb-1'>Dart</p>
-                    <p className='mb-1'>Flutter</p>
-                    <p className='mb-1'>Android Studio</p>
-                    <p className='mb-1'>React</p>
-                    <p className='mb-1'>Xcode</p>
-                    <p className='mb-1'>Firebase</p>
-                </div>
-            ),
-        },
-        {
-            title: "Technologies",
-            description: (
-                <div>
-                    <p className='mb-1'>Docker</p>
-                    <p className='mb-1'>Docker Compose</p>
-                    <p className='mb-1'>Git</p>
-                    <p className='mb-1'>React</p>
-                    <p className='mb-1'>GitHub</p>
-                    <p className='mb-1'>GitLab</p>
-                    <p className='mb-1'>Visual Studio Code</p>
-                    <p className='mb-1'>Linux</p>
-                    <p className='mb-1'>macOS</p>
-                    <p className='mb-1'>Windows</p>
-                </div>
-            ),
-        },
-        {
-            title: "Soft Skills",
-            description: (
-                <div>
-                    <p className='mb-1'>Agile methodologies</p>
-                    <p className='mb-1'>Team work</p>
-                    <p className='mb-1'>Constant evolution</p>
-                    <p className='mb-1'>Curious</p>
-                    <p className='mb-1'>Easy learning</p>
-                </div>
-            ),
-        },
-    ];
 
     return (
         <div className="text-gray-200 mt-40">
@@ -128,32 +77,31 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-            <div className='mx-auto'>
-                <Carousel
-                    opts={{
-                        align: "start",
-                    }}
-                    className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto mb-48 md:mb-54">
-                    <CarouselContent>
-                        {skills.map((Skill, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                                <div className="p-1">
-                                    <Card className='border-3'>
-                                        <CardContent className="p-6 bg-gray-800 h-[22rem] md:h-[25rem]">
-                                            {skillIcons[Skill.title]}
-                                            <p className="font-medium leading-none text-sm md:text-lg text-blue-500 title-font mb-6">{Skill.title}</p>
-                                            <div className="text-xs md:text-sm text-violet-700 font-semibold">
-                                                {typeof Skill.description === 'string' ? Skill.description : Skill.description}
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                </Carousel>
+            <div className="grid grid-cols-2 md:grid-cols-4 max-w-xs md:max-w-2xl mx-auto rounded-md border-slate-800 hover:border-purple-900  border-x-2 border-y-2 p-2 font-light mb-6">
+                <TechItem icon={SiHtml5} text="Html" />
+                <TechItem icon={SiTailwindCSS} text="TailwindCSS" />
+                <TechItem icon={SiTypescript} text="TypeScript" />
+                <TechItem icon={SiJavascript} text="JavaScript" />
+                <TechItem icon={SiReact} text="React.js" />
+                <TechItem icon={SiJest} text="Jest" />
+                <TechItem icon={SiNextJs} text="Next.js" />
+                <TechItem icon={SiVite} text="Vite" />
+                <TechItem icon={SiDocker} text="Docker" />
+                <TechItem icon={SiPostman} text="Postman" />
+                <TechItem icon={SiSwagger} text="Swagger" />
+                <TechItem icon={SiFlutter} text="Flutter" />
+                <TechItem icon={SiDart} text="Dart" />
+                <TechItem icon={SiFirebase} text="Firebase" />
+                <TechItem icon={SiGit} text="Git" />
+                <TechItem icon={SiGithub} text="Github" />
+                <TechItem icon={SiGitlab} text="Gitlab" />
+                <TechItem icon={SiNpm} text="Npm" />
+                <TechItem icon={SiVisualstudiocode} text="VSCode" />
+                <TechItem icon={SiXcode} text="Xcode" />
+                <TechItem icon={SiAndroidstudio} text="AndroidStudio" />
+                <TechItem icon={SiLinux} text="Linux" />
+                <TechItem icon={SiMacos} text="macOS" />
+                <TechItem icon={SiWindows} text="Windows" />
             </div>
             <div className="mx-auto mt-28 mb-20 text-center text-white items-center">
                 <ul className="flex justify-center mt-0 space-x-5">
