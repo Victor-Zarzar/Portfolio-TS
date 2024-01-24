@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 type Props = {};
 
