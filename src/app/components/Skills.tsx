@@ -77,7 +77,7 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 max-w-xs md:max-w-2xl mx-auto rounded-md border-slate-800 hover:border-purple-900  border-x-2 border-y-2 p-2 font-light mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 max-w-xs md:max-w-2xl mx-auto rounded-md border-purple-900 hover:border-indigo-500  border-x-2 border-y-2 p-2 font-light mb-6">
                 <TechItem icon={SiHtml5} text="Html" />
                 <TechItem icon={SiTailwindCSS} text="TailwindCSS" />
                 <TechItem icon={SiTypescript} text="TypeScript" />
