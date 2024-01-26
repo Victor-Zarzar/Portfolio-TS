@@ -33,6 +33,7 @@ export default function Projects() {
   const portfolio = '/portfolio.png';
   const mario = '/mario.png';
   const gpt = '/gpt.png';
+  const nft = '/nft.png';
 
   const projects: Project[] = [
     {
@@ -70,6 +71,22 @@ export default function Projects() {
       ),
       photo: ecommerce,
       sourceCodeLink: "https://github.com/Victor-Zarzar/e-commerce-ts",
+    },
+    {
+      title: "NFT App",
+      description: (
+        <div>
+          <p className="mb-3">A project NFT Market Place.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+          </div>
+        </div>
+      ),
+      photo: nft,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/nft-flutter",
     },
     {
       title: "Portfolio",
