@@ -3,8 +3,6 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { TbFileDownload } from "react-icons/tb";
-import { FaBug } from "react-icons/fa";
-import { FaDev } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';

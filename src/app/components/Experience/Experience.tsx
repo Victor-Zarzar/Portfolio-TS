@@ -38,7 +38,7 @@ export default function Experience() {
                                 </span>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">
-                                São Leopoldo, RS, Brasil - Remote
+                                São Leopoldo, RS, Brazil - Remote
                             </span>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default function Experience() {
                                 </span>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">
-                                Novo Hamburgo, RS, Brasil - Remote
+                                Novo Hamburgo, RS, Brazil - Remote
                             </span>
                         </div>
                     </div>
