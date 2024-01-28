@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from "react";
 import { ThemeProvider, createGlobalStyle, DefaultTheme } from "styled-components";
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 interface ThemeProps {
     body: string;
 }

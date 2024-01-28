@@ -29,7 +29,7 @@ import {
 } from "react-icons/si";
 import { FaSquareXTwitter, FaGithub, FaFacebook } from "react-icons/fa6";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { TechItem } from "../components/TechItem";
+import { TechItem } from "./TechItem";
 import Link from 'next/link';
 
 

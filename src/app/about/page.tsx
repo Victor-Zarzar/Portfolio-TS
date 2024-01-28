@@ -8,6 +8,7 @@ import { FaDev } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import Experience from '../components/Experience/Experience';
 
 export default function About() {
   return (
@@ -31,40 +32,8 @@ export default function About() {
             I love learning about new technologies and solving problems. In love with coffee, my vinyl records & Rock n Roll 🤘🏻.
           </p>
         </div>
-        <div className="rounded-lg p-6 mt-20">
-          <Fade>
-            <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Experience Tech</h2>
-          </Fade>
-          <div className="flex mt-6 justify-center">
-            <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-            </div>
-          </div>
-          <div className="flex">
-            <div className="flex items-center mx-auto mt-10">
-              <FaBug className="w-5 h-4 md:w-8 md:h-6 text-gray-500" />
-              <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl tracking-tighter font-bold">QA Tester - Freelancer - December 2022 - March 2023:</span>
-            </div>
-          </div>
-          <div className="mt-3 mb-4 justify-center items-center text-center">
-            <h1 className='text-[11px] md:text-sm text-blue-500 mt-5 font-bold'>Manual tests, Functional, Usability, Load, Localization, Accessibility, Regression.</h1>
-            <br />
-            <h2 className='text-[11px] md:text-sm text-blue-500 font-bold'>Tests Case Testing of web and mobile apps, Android/iOS.</h2>
-          </div>
-          <div className="flex">
-            <div className="flex items-center mx-auto mt-5">
-              <FaDev className="w-5 h-4 md:w-8 md:h-6 text-gray-500" />
-              <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl tracking-tighter font-bold">Software Developer JR - March 2023 - Present:</span>
-            </div>
-          </div>
-          <div className="mt-3 mb-4 justify-center items-center text-center">
-            <h1 className='text-[11px] md:text-sm text-blue-500 mt-5 font-bold'>Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.</h1>
-            <br />
-            <h2 className='text-[11px] md:text-sm text-blue-500 font-bold'>Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.</h2>
-            <br />
-            <h3 className='text-[11px] md:text-sm text-blue-500 font-bold'>Agile Methodologies, Linux, macOS, Visual Studio Code.</h3>
-          </div>
-        </div>
       </div>
+      <Experience />
       <div className="rounded-lg p-6 mt-20">
         <Fade >
           <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl  text-blue-500 text-center mt-14">Education</h2>
