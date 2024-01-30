@@ -34,7 +34,7 @@ export default function Experience() {
                                 Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.
                                 </span>
                                 <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                Agile Methodologies, Linux, macOS, Visual Studio Code.
+                                Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.
                                 </span>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">

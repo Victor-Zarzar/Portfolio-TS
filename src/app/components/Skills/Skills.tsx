@@ -26,6 +26,10 @@ import {
     SiLinux,
     SiMacos,
     SiWindows,
+    SiCodemagic,
+    SiCypress,
+    SiTrello,
+    SiVercel,
 } from "react-icons/si";
 import { FaSquareXTwitter, FaGithub, FaFacebook } from "react-icons/fa6";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -87,6 +91,7 @@ export default function Skills() {
                 <TechItem icon={SiJavascript} text="JavaScript" />
                 <TechItem icon={SiReact} text="React.js" />
                 <TechItem icon={SiJest} text="Jest" />
+                <TechItem icon={SiCypress} text="Cypress" />
                 <TechItem icon={SiNextJs} text="Next.js" />
                 <TechItem icon={SiVite} text="Vite" />
                 <TechItem icon={SiDocker} text="Docker" />
@@ -95,6 +100,8 @@ export default function Skills() {
                 <TechItem icon={SiFlutter} text="Flutter" />
                 <TechItem icon={SiDart} text="Dart" />
                 <TechItem icon={SiFirebase} text="Firebase" />
+                <TechItem icon={SiCodemagic} text="CodeMagic" />
+                <TechItem icon={SiVercel} text="Vercel" /> 
                 <TechItem icon={SiGit} text="Git" />
                 <TechItem icon={SiGithub} text="Github" />
                 <TechItem icon={SiGitlab} text="Gitlab" />
@@ -104,7 +111,8 @@ export default function Skills() {
                 <TechItem icon={SiAndroidstudio} text="AndroidStudio" />
                 <TechItem icon={SiLinux} text="Linux" />
                 <TechItem icon={SiMacos} text="macOS" />
-                <TechItem icon={SiWindows} text="Windows" />
+                <TechItem icon={SiWindows} text="Windows" /> 
+                <TechItem icon={SiTrello} text="Trello" /> 
             </div>
             <div className="flex mx-auto mt-28 mb-20 space-x-3 md:space-x-5 text-center text-white justify-center items-center">
                 <Link href={'https://facebook.com/victorzarzar58'} target="_blank">
