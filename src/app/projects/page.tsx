@@ -32,7 +32,7 @@ export default function Projects() {
   const ecommerce = '/e-commerce.png'
   const portfolio = '/portfolio.png';
   const mario = '/mario.png';
-  const gpt = '/gpt.png';
+  const weather = '/weather.png';
   const nft = '/nft.png';
 
   const projects: Project[] = [
@@ -108,6 +108,22 @@ export default function Projects() {
       sourceCodeLink: "https://github.com/Victor-Zarzar/portfolio-ts",
     },
     {
+      title: "Weather App",
+      description: (
+        <div>
+          <p className="mb-3">A project Weather App.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+          </div>
+        </div>
+      ),
+      photo: weather,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/weather-flutter",
+    },
+    {
       title: "Mario Jump",
       description: (
         <div>
@@ -122,22 +138,6 @@ export default function Projects() {
       ),
       photo: mario,
       sourceCodeLink: "https://github.com/Victor-Zarzar/SuperMario-Flutter",
-    },
-    {
-      title: "ChatGPT",
-      description: (
-        <div>
-          <p className="mb-3">A project involving ChatGPT.</p>
-          <div className="flex space-x-2 md:space-x-2">
-            <FlutterIcon />
-            <DartIcon />
-            <AndroidIcon />
-            <IosIcon />
-          </div>
-        </div>
-      ),
-      photo: gpt,
-      sourceCodeLink: "https://github.com/Victor-Zarzar/chat-gpt",
     },
   ];
 
