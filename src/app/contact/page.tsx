@@ -52,7 +52,7 @@ const ContactMe = (_props: Props) => {
     return (
         <>
             <div className="h-screen mt-14 flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-                <div className="absolute top-24">
+                <div className="absolute top-10 md:top-24">
                     <Fade>
                         <h3 className="title-skills font-extrabold mb-4 text-3xl md:text-4xl leading-10 tracking-tight text-blue-500 text-center cursor-default">
                             Contact Me ;)
@@ -161,7 +161,7 @@ const ContactMe = (_props: Props) => {
                 </div>
             </div>
             <div className="flex mx-auto mt-0 mb-20 space-x-3 md:space-x-5 text-center text-white justify-center items-center">
-            <Link href={'https://facebook.com/victorzarzar58'} target="_blank">
+                <Link href={'https://facebook.com/victorzarzar58'} target="_blank">
                     <FaFacebook className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
                 </Link>
                 <Link href={'https://instagram.com/victorzarzar7'} target="_blank">
