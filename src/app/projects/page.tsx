@@ -31,11 +31,29 @@ export default function Projects() {
   const musicplayer = '/musicplayer.jpg';
   const ecommerce = '/e-commerce.png'
   const portfolio = '/portfolio.png';
-  const mario = '/mario.png';
+  const lawfirm = '/lawfirm.png';
   const weather = '/weather.png';
   const nft = '/nft.png';
 
   const projects: Project[] = [
+    {
+      title: "Law Firm",
+      description: (
+        <div>
+          <p className="mb-3">Web site application Law Firm.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <HtmlIcon />
+            <ReactIcon />
+            <TypescriptIcon />
+            <TailwindIcon />
+            <NextjsIcon />
+            <DockerIcon />
+          </div>
+        </div>
+      ),
+      photo: lawfirm,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/law-firm",
+    },
     {
       title: "Music Player",
       description: (
@@ -122,22 +140,6 @@ export default function Projects() {
       ),
       photo: weather,
       sourceCodeLink: "https://github.com/Victor-Zarzar/weather-flutter",
-    },
-    {
-      title: "Mario Jump",
-      description: (
-        <div>
-          <p className="mb-3">A Super Mario game built with Flutter.</p>
-          <div className="flex space-x-2 md:space-x-2">
-            <FlutterIcon />
-            <DartIcon />
-            <AndroidIcon />
-            <IosIcon />
-          </div>
-        </div>
-      ),
-      photo: mario,
-      sourceCodeLink: "https://github.com/Victor-Zarzar/SuperMario-Flutter",
     },
   ];
 
