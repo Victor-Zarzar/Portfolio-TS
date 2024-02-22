@@ -7,9 +7,7 @@ import { toast } from "react-toastify";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button";
-import { FaSquareXTwitter, FaGithub, FaFacebook } from "react-icons/fa6";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import Link from 'next/link';
+import MapsInfo from "../components/Maps/Maps";
 
 type Props = {};
 
@@ -160,22 +158,10 @@ const ContactMe = (_props: Props) => {
                     </form>
                 </div>
             </div>
-            <div className="flex mx-auto mt-0 mb-20 space-x-3 md:space-x-5 text-center text-white justify-center items-center">
-                <Link href={'https://facebook.com/victorzarzar58'} target="_blank">
-                    <FaFacebook className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://instagram.com/victorzarzar7'} target="_blank">
-                    <FaInstagram className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://twitter.com/victorzarzar1'} target="_blank">
-                    <FaSquareXTwitter className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://www.linkedin.com/in/victorzarzar'} target="_blank">
-                    <FaLinkedin className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://github.com/Victor-Zarzar'} target="_blank">
-                    <FaGithub className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
+            <h1 className="font-extrabold text-3xl md:text-4xl leading-10 mb-4 tracking-tight text-blue-500 text-center cursor-default">My Localization</h1>
+            <div className="w-32 h-1 rounded-full bg-indigo-500 flex mx-auto mb-20"></div>
+            <div className="flex justify-center items-center mt-0 mb-20">
+                <MapsInfo />
             </div>
         </>
     );
