@@ -54,9 +54,9 @@ For the stack:
 </p>
 
 <p align="center">
-  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/1d83dbc6-7a1f-45f1-bb9d-752c909db46a" alt="Screenshot 2024-02-22 13-19-06" width="332px" height="500px" style="margin-right: 10px;">
-  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/41b7641a-b917-46d0-a4b2-3f2931192e44" alt="Screenshot 2024-02-22 13-20-00" width="332px" height="500px">
-  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/29c42b30-6531-4450-92bb-f5ea8397103a" alt="Screenshot 2024-02-22 13-20-00" width="332px" height="500px">
+  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/1d83dbc6-7a1f-45f1-bb9d-752c909db46a" alt="Screenshot 2024-02-22 13-19-06" width="250px" height="450px"> 
+  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/41b7641a-b917-46d0-a4b2-3f2931192e44" alt="Screenshot 2024-02-22 13-20-00" width="250px" height="450px">
+  <img src="https://github.com/Victor-Zarzar/portfolio-ts/assets/114430780/29c42b30-6531-4450-92bb-f5ea8397103a" alt="Screenshot 2024-02-22 13-20-00" width="250px" height="450px">
 </p>
 
 
