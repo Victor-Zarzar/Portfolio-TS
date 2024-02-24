@@ -7,6 +7,7 @@ import { IoSchool } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Experience from '../components/Experience/Experience';
+import LineColor from '../components/LineColor/LineColor';
 
 export default function About() {
   return (
@@ -17,8 +18,7 @@ export default function About() {
             <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">About Me</h2>
           </Fade>
           <div className="flex mt-6 justify-center">
-            <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-            </div>
+            <LineColor />
           </div>
           <Avatar className='w-40 h-40 md:w-72 md:h-72 bg-gray-300 rounded-full mb-4 shrink-0 mx-auto mt-14'>
             <AvatarImage src="profile.jpg" />
@@ -37,8 +37,7 @@ export default function About() {
           <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl  text-blue-500 text-center mt-14">Education</h2>
         </Fade>
         <div className="flex mt-6 justify-center">
-          <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-          </div>
+          <LineColor />
         </div>
         <div className="flex">
           <div className="flex items-center mx-auto mt-10">
@@ -52,8 +51,7 @@ export default function About() {
           <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Certifications</h2>
         </Fade>
         <div className="flex mt-6 justify-center">
-          <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-          </div>
+          <LineColor />
         </div>
         <div className="flex">
           <div className="flex items-center mx-auto mt-10">
@@ -124,8 +122,7 @@ export default function About() {
             <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h2>
           </Fade>
           <div className="flex mt-6 justify-center">
-            <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-            </div>
+            <LineColor />
           </div>
           <div className="flex">
             <div className="flex items-center mx-auto mt-10">

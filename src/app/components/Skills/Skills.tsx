@@ -18,23 +18,24 @@ import {
     SiPostman,
     SiSwagger,
     SiVite,
-    SiJest,
+    SiArchlinux,
     SiGitlab,
     SiAndroidstudio,
     SiXcode,
     SiFirebase,
     SiLinux,
     SiMacos,
-    SiWindows,
     SiCodemagic,
     SiCypress,
     SiTrello,
     SiVercel,
+    SiPnpm,
 } from "react-icons/si";
 import { FaSquareXTwitter, FaGithub, FaFacebook } from "react-icons/fa6";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TechItem } from "./TechItem";
 import Link from 'next/link';
+import LineColor from '../LineColor/LineColor';
 
 
 export default function Skills() {
@@ -48,8 +49,7 @@ export default function Skills() {
                     </Fade>
                     <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
                     <div className="flex mt-6 justify-center">
-                        <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
-                        </div>
+                    <LineColor />
                     </div>
                     <div className="mx-auto mt-20 mb-8 text-center text-white items-center">
                         <ul className="flex justify-center mt-5 space-x-10">
@@ -90,7 +90,6 @@ export default function Skills() {
                 <TechItem icon={SiTypescript} text="TypeScript" />
                 <TechItem icon={SiJavascript} text="JavaScript" />
                 <TechItem icon={SiReact} text="React.js" />
-                <TechItem icon={SiJest} text="Jest" />
                 <TechItem icon={SiCypress} text="Cypress" />
                 <TechItem icon={SiNextJs} text="Next.js" />
                 <TechItem icon={SiVite} text="Vite" />
@@ -109,9 +108,10 @@ export default function Skills() {
                 <TechItem icon={SiVisualstudiocode} text="VSCode" />
                 <TechItem icon={SiXcode} text="Xcode" />
                 <TechItem icon={SiAndroidstudio} text="AndroidStudio" />
+                <TechItem icon={SiArchlinux} text="ArchLinux" />
                 <TechItem icon={SiLinux} text="Linux" />
                 <TechItem icon={SiMacos} text="macOS" />
-                <TechItem icon={SiWindows} text="Windows" /> 
+                <TechItem icon={SiPnpm} text="Pnpm" /> 
                 <TechItem icon={SiTrello} text="Trello" /> 
             </div>
             <div className="flex mx-auto mt-28 mb-20 space-x-3 md:space-x-5 text-center text-white justify-center items-center">

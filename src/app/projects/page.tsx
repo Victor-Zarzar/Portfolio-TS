@@ -18,6 +18,7 @@ import IosIcon from "../icons/projects/ios";
 import StripeIcon from "../icons/projects/stripe";
 import PrismaIcon from "../icons/projects/prisma";
 import StyledIcon from "../icons/projects/styled";
+import LineColor from "../components/LineColor/LineColor";
 
 type Project = {
   title: string;
@@ -151,7 +152,7 @@ export default function Projects() {
             <h2 className="title-projects mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Projects</h2>
           </Fade>
           <div className="flex mt-6 justify-center">
-            <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <LineColor />
           </div>
         </div>
         <div className="px-10 my-4 mt-20" id="projects">

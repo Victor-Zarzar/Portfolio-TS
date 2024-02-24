@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button";
 import MapsInfo from "../components/Maps/Maps";
+import LineColor from "../components/LineColor/LineColor";
 
 type Props = {};
 
@@ -56,7 +57,7 @@ const ContactMe = (_props: Props) => {
                             Contact Me ;)
                         </h3>
                     </Fade>
-                    <div className="w-32 h-1 rounded-full bg-indigo-500 flex mt-6 mx-auto"></div>
+                    <LineColor />
                 </div>
                 <div className="flex flex-col space-y-10 mt-10">
                     <div className="space-y-3">
@@ -158,9 +159,11 @@ const ContactMe = (_props: Props) => {
                     </form>
                 </div>
             </div>
-            <h1 className="font-extrabold text-3xl md:text-4xl leading-10 mb-4 tracking-tight text-blue-500 text-center cursor-default">My Localization</h1>
-            <div className="w-32 h-1 rounded-full bg-indigo-500 flex mx-auto mb-20"></div>
-            <div className="flex justify-center items-center mt-0 mb-20">
+            <Fade>
+                <h1 className="font-extrabold text-3xl md:text-4xl leading-10 mb-4 tracking-tight text-blue-500 text-center cursor-default">My Localization</h1>
+            </Fade>
+            <LineColor />
+            <div className="flex justify-center items-center mb-20 mt-20">
                 <MapsInfo />
             </div>
         </>
