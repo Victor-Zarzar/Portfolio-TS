@@ -27,7 +27,7 @@ export default function Header() {
                     />
                 </div>
             </div>
-            <div className="container-button max-w-[19rem] md:max-w-sm lg:max-w-md xl:max-w-[44rem] text-right space-x-4">
+            <div className="container px-10 md:px-36 space-x-4">
                 <Link href="https://github.com/Victor-Zarzar" target="_blank">
                     <Button type='button' className='inline-block px-10 md:px-12 py-2 text-sm font-medium border-purple-900 rounded active:text-violet-500 bg-transparent text-violet-700 hover:text-white hover:bg-purple-900 border focus:outline-none focus:ring'>GitHub</Button>
                 </Link>

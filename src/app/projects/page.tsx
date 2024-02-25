@@ -145,7 +145,7 @@ export default function Projects() {
   ];
 
   return (
-    <div>
+    <>
       <div className="col-span-4 mx-auto">
         <div className="p-6">
           <Fade>
@@ -163,8 +163,7 @@ export default function Projects() {
             Here are a few of my live, real-world projects
           </p>
         </div>
-      </div>
-      <div>
+      </div><div>
         <Carousel className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto mb-48 md:mb-54">
           <CarouselContent className="-ml-1">
             {projects.map((project, index) => (
@@ -180,8 +179,7 @@ export default function Projects() {
                               alt={project.title}
                               width={600}
                               height={600}
-                              className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] lg:w-[18rem] lg:h-[18rem] xl:w-[23rem] xl:h-[23rem] absolute"
-                            />
+                              className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] lg:w-[18rem] lg:h-[18rem] xl:w-[23rem] xl:h-[23rem] absolute" />
                           </CardContent>
                         </div>
                       </PopoverTrigger>
@@ -210,6 +208,6 @@ export default function Projects() {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </>
   )
 }

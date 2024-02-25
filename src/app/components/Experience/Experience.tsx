@@ -3,7 +3,6 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Experience() {
     return (
-
         <div className="rounded-lg p-6 mt-20">
             <Fade>
                 <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Experience Tech</h2>
@@ -28,13 +27,13 @@ export default function Experience() {
                                     XLabs Security
                                 </span>
                                 <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.
+                                    Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.
                                 </span>
                                 <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.
+                                    Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.
                                 </span>
                                 <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.
+                                    Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.
                                 </span>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">
