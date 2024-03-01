@@ -19,6 +19,8 @@ import StripeIcon from "../icons/projects/stripe";
 import PrismaIcon from "../icons/projects/prisma";
 import StyledIcon from "../icons/projects/styled";
 import LineColor from "../components/LineColor/LineColor";
+import XcodeIcon from "../icons/projects/xcode";
+import AndroidStudioIcon from "../icons/projects/androidstudio";
 
 type Project = {
   title: string;
@@ -29,6 +31,7 @@ type Project = {
 
 export default function Projects() {
 
+  const groceryapp = '/groceryapp.png';
   const musicplayer = '/musicplayer.jpg';
   const ecommerce = '/e-commerce.png'
   const portfolio = '/portfolio.png';
@@ -37,6 +40,24 @@ export default function Projects() {
   const nft = '/nft.png';
 
   const projects: Project[] = [
+    {
+      title: "Grocery Shop App",
+      description: (
+        <div>
+          <p className="mb-3">A simple App Shop Grocery Flutter.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+            <XcodeIcon />
+            <AndroidStudioIcon />
+          </div>
+        </div>
+      ),
+      photo: groceryapp,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/grocery-shop-flutter",
+    },
     {
       title: "Law Firm",
       description: (
@@ -65,6 +86,8 @@ export default function Projects() {
             <DartIcon />
             <AndroidIcon />
             <IosIcon />
+            <XcodeIcon />
+            <AndroidStudioIcon />
           </div>
         </div>
       ),
@@ -101,6 +124,8 @@ export default function Projects() {
             <DartIcon />
             <AndroidIcon />
             <IosIcon />
+            <XcodeIcon />
+            <AndroidStudioIcon />
           </div>
         </div>
       ),
@@ -136,6 +161,8 @@ export default function Projects() {
             <DartIcon />
             <AndroidIcon />
             <IosIcon />
+            <XcodeIcon />
+            <AndroidStudioIcon />
           </div>
         </div>
       ),
