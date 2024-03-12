@@ -31,6 +31,7 @@ type Project = {
 
 export default function Projects() {
 
+  const shoppingapp = '/shoppingflutter.png';
   const groceryapp = '/groceryapp.png';
   const musicplayer = '/musicplayer.jpg';
   const ecommerce = '/e-commerce.png'
@@ -41,10 +42,10 @@ export default function Projects() {
 
   const projects: Project[] = [
     {
-      title: "Grocery Shop App",
+      title: "Shopping App",
       description: (
         <div>
-          <p className="mb-3">A simple App Shop Grocery Flutter.</p>
+          <p className="mb-3">App Shopping Flutter.</p>
           <div className="flex space-x-2 md:space-x-2">
             <FlutterIcon />
             <DartIcon />
@@ -55,8 +56,8 @@ export default function Projects() {
           </div>
         </div>
       ),
-      photo: groceryapp,
-      sourceCodeLink: "https://github.com/Victor-Zarzar/grocery-shop-flutter",
+      photo: shoppingapp,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/shopping-flutter",
     },
     {
       title: "Law Firm",
@@ -75,6 +76,24 @@ export default function Projects() {
       ),
       photo: lawfirm,
       sourceCodeLink: "https://github.com/Victor-Zarzar/law-firm",
+    },
+    {
+      title: "Grocery Shop App",
+      description: (
+        <div>
+          <p className="mb-3">A simple App Shop Grocery Flutter.</p>
+          <div className="flex space-x-2 md:space-x-2">
+            <FlutterIcon />
+            <DartIcon />
+            <AndroidIcon />
+            <IosIcon />
+            <XcodeIcon />
+            <AndroidStudioIcon />
+          </div>
+        </div>
+      ),
+      photo: groceryapp,
+      sourceCodeLink: "https://github.com/Victor-Zarzar/grocery-shop-flutter",
     },
     {
       title: "Music Player",
