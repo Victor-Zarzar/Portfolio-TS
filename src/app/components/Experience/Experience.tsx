@@ -23,18 +23,13 @@ export default function Experience() {
                                 <h1 className="select-none text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl tracking-tighter font-bold">
                                     Front-End Developer JR
                                 </h1>
-                                <span className="select-none text-sm leading-relaxed text-purple-900 md:text-lg tracking-tighter font-bold">
-                                    XLabs Security
-                                </span>
-                                <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                    Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.
-                                </span>
-                                <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                    Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.
-                                </span>
-                                <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                    Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.
-                                </span>
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-sm font-bold">
+                                    <li>Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.</li>
+                                    <li>Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.</li>
+                                </ul>
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-sm font-bold">
+                                    <li>Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.</li>
+                                </ul>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">
                                 São Leopoldo, RS, Brazil - Remote
@@ -54,12 +49,10 @@ export default function Experience() {
                                 <span className="select-none text-sm leading-relaxed text-purple-900 md:text-lg tracking-tighter font-bold">
                                     Freelance
                                 </span>
-                                <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                    Manual tests, Functional, Usability, Load, Localization, Accessibility, Regression.
-                                </span>
-                                <span className="select-none text-[11px] md:text-sm text-blue-500 mt-1 font-bold">
-                                    Tests Case Testing of web and mobile apps, Android/iOS.
-                                </span>
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-sm font-bold">
+                                    <li>Manual tests: Functional, Usability, Load, Localization, Accessibility, Regression.</li>
+                                    <li>Test Case Testing of web and mobile apps, Android/iOS.</li>
+                                </ul>
                             </div>
                             <span className="select-none text-lg text-gray-500 mt-1">
                                 Novo Hamburgo, RS, Brazil - Remote
