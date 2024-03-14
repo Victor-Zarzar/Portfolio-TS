@@ -115,6 +115,14 @@ export default function About() {
             </Link>
           </div>
         </div>
+        <div className="flex">
+          <div className="flex items-center mx-auto mt-10">
+            <span className="text-xs leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">SQL database from scratch to advanced 2023.</span>
+            <Link href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e0c2067e-587a-4b0a-bab5-7dc87d8b0524.pdf" target="_blank">
+              <TbFileDownload className='w-4 h-4 md:w-8 md:h-6 text-gray-500' />
+            </Link>
+          </div>
+        </div>
         <div className="rounded-lg p-6 mt-20">
           <Fade>
             <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h2>
