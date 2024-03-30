@@ -31,12 +31,9 @@ import {
     SiVercel,
     SiPnpm,
 } from "react-icons/si";
-import { FaSquareXTwitter, FaGithub, FaFacebook } from "react-icons/fa6";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TechItem } from "./TechItem";
-import Link from 'next/link';
 import LineColor from '../LineColor/LineColor';
-
+import IconsBody from '../IconsBody/IconsBody';
 
 export default function Skills() {
 
@@ -47,9 +44,9 @@ export default function Skills() {
                     <Fade>
                         <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center">Skills</h1>
                     </Fade>
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
+                    <p className="text-sm leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
                     <div className="flex mt-6 justify-center">
-                    <LineColor />
+                        <LineColor />
                     </div>
                     <div className="mx-auto mt-20 mb-8 text-center text-white items-center">
                         <ul className="flex justify-center mt-5 space-x-10">
@@ -100,7 +97,7 @@ export default function Skills() {
                 <TechItem icon={SiDart} text="Dart" />
                 <TechItem icon={SiFirebase} text="Firebase" />
                 <TechItem icon={SiCodemagic} text="CodeMagic" />
-                <TechItem icon={SiVercel} text="Vercel" /> 
+                <TechItem icon={SiVercel} text="Vercel" />
                 <TechItem icon={SiGit} text="Git" />
                 <TechItem icon={SiGithub} text="Github" />
                 <TechItem icon={SiGitlab} text="Gitlab" />
@@ -111,26 +108,10 @@ export default function Skills() {
                 <TechItem icon={SiArchlinux} text="ArchLinux" />
                 <TechItem icon={SiLinux} text="Linux" />
                 <TechItem icon={SiMacos} text="macOS" />
-                <TechItem icon={SiPnpm} text="Pnpm" /> 
-                <TechItem icon={SiTrello} text="Trello" /> 
+                <TechItem icon={SiPnpm} text="Pnpm" />
+                <TechItem icon={SiTrello} text="Trello" />
             </div>
-            <div className="flex mx-auto mt-28 mb-20 space-x-3 md:space-x-5 text-center text-white justify-center items-center">
-                <Link href={'https://facebook.com/victorzarzar58'} target="_blank">
-                    <FaFacebook className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://instagram.com/victorzarzar7'} target="_blank">
-                    <FaInstagram className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://twitter.com/victorzarzar1'} target="_blank">
-                    <FaSquareXTwitter className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://www.linkedin.com/in/victorzarzar'} target="_blank">
-                    <FaLinkedin className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-                <Link href={'https://github.com/Victor-Zarzar'} target="_blank">
-                    <FaGithub className='h-10 w-10 md:h-12 md:w-12 text-gray-500 hover:text-gray-400' />
-                </Link>
-            </div>
+            <IconsBody />
         </div>
     )
 }

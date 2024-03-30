@@ -193,23 +193,24 @@ export default function Projects() {
   return (
     <>
       <div className="col-span-4 mx-auto">
-        <div className="p-6">
+        <div className="h1 p-6">
           <Fade>
-            <h2 className="title-projects mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Projects</h2>
+            <h1 className="title-projects mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Projects</h1>
           </Fade>
           <div className="flex mt-6 justify-center">
             <LineColor />
           </div>
         </div>
         <div className="px-10 my-4 mt-20" id="projects">
-          <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight md:text-2xl lg:text-3xl text-blue-500 mt-16 text-center">
+          <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight text-lg md:text-2xl lg:text-3xl text-blue-500 mt-16 text-center">
             Featured projects:
           </h1>
-          <p className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mb-16 text-center">
+          <p className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mb-16 text-center">
             Here are a few of my live, real-world projects
           </p>
         </div>
-      </div><div>
+      </div>
+      <div className="carrousel-container">
         <Carousel className="w-full max-w-[16rem] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto mb-48 md:mb-54">
           <CarouselContent className="-ml-1">
             {projects.map((project, index) => (

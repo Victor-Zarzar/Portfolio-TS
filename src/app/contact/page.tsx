@@ -62,12 +62,12 @@ const ContactMe = (_props: Props) => {
                 <div className="flex flex-col space-y-10 mt-10">
                     <div className="space-y-3">
                         <div className="flex items-center space-x-2 justify-center">
-                            <PhoneIcon className="text-blue-500 h-7 w-7" />
-                            <p className="text-base md:text-2xl lg:text-2xl text-indigo-500">+55 (51) 9.8618-1044</p>
+                            <PhoneIcon className="text-blue-500 h-5 w-5 md:h-7 md:w-7" />
+                            <p className="text-sm md:text-2xl lg:text-2xl text-indigo-500">+55 (51) 9.8618-1044</p>
                         </div>
                         <div className="flex items-center space-x-2 justify-center">
-                            <MapPinIcon className="text-blue-500 h-7 w-7" />
-                            <p className="text-base md:text-2xl lg:text-2xl text-indigo-500">Novo Hamburgo, RS</p>
+                            <MapPinIcon className="text-blue-500 h-5 w-5 md:h-7 md:w-7" />
+                            <p className="text-sm md:text-2xl lg:text-2xl text-indigo-500">Novo Hamburgo, RS</p>
                             <Image
                                 src="/br.png"
                                 alt="br"
@@ -78,8 +78,8 @@ const ContactMe = (_props: Props) => {
                             />
                         </div>
                         <div className="flex items-center space-x-2 justify-center">
-                            <EnvelopeIcon className="text-blue-500 h-7 w-7" />
-                            <p className="text-base md:text-2xl lg:text-2xl text-indigo-500">victorzarzar58@gmail.com</p>
+                            <EnvelopeIcon className="text-blue-500 h-5 w-5 md:h-7 md:w-7" />
+                            <p className="text-sm md:text-2xl lg:text-2xl text-indigo-500">victorzarzar58@gmail.com</p>
                         </div>
                     </div>
                     <form

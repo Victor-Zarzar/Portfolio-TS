@@ -14,7 +14,7 @@ export default function About() {
     <>
       <div className="rounded-lg p-6">
         <Fade>
-          <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">About Me</h2>
+          <h1 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">About Me</h1>
         </Fade>
         <div className="flex mt-6 justify-center">
           <LineColor />
@@ -23,7 +23,7 @@ export default function About() {
           <AvatarImage src="profile.jpg" />
           <AvatarFallback>VZ</AvatarFallback>
         </Avatar>
-        <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-10">
+        <p className="text-sm leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-10">
           My first contact with programming was in 2009, using SQL-SERVER 2000 & My SQL technologies, creating, restoring and editing databases, and creating sites in PHP.
           Always looking to improve my knowledge daily, Im not afraid of the unknown, I try to evolve every day, new challenges are welcome.
           I love learning about new technologies and solving problems. In love with coffee, my vinyl records & Rock n Roll 🤘🏻.
@@ -32,7 +32,7 @@ export default function About() {
       <Experience />
       <div className="rounded-lg p-6 mt-20">
         <Fade >
-          <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl  text-blue-500 text-center mt-14">Education</h2>
+          <h1 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl  text-blue-500 text-center mt-14">Education</h1>
         </Fade>
         <div className="flex mt-6 justify-center">
           <LineColor />
@@ -46,7 +46,7 @@ export default function About() {
       </div>
       <div className="rounded-lg p-6 mt-20">
         <Fade>
-          <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Certifications</h2>
+          <h1 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Certifications</h1>
         </Fade>
         <div className="flex mt-6 justify-center">
           <LineColor />
@@ -125,7 +125,7 @@ export default function About() {
         </div>
         <div className="rounded-lg p-6 mt-20">
           <Fade>
-            <h2 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h2>
+            <h1 className="title-about mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center mt-14">Languages</h1>
           </Fade>
           <div className="flex mt-6 justify-center">
             <LineColor />
@@ -138,9 +138,9 @@ export default function About() {
                 width={20}
                 height={20}
                 priority
-                className='h-5 w-5 md:w-7 md:h-7 lg:w-7 lg:h-7 mr-1'
+                className='h-3 w-3 md:w-7 md:h-7 mr-1'
               />
-              <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">EN - Basic</span>
+              <span className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">EN - Basic</span>
             </div>
           </div>
           <div className="flex mb-20">
@@ -151,9 +151,9 @@ export default function About() {
                 width={20}
                 height={20}
                 priority
-                className='h-5 w-5 md:w-7 md:h-7 lg:w-7 lg:h-7 mr-1'
+                className='h-3 w-3 md:w-7 md:h-7 mr-1'
               />
-              <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">PT-BR - Native Speaker</span>
+              <span className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">PT-BR - Native Speaker</span>
             </div>
           </div>
         </div>
