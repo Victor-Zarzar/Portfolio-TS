@@ -26,11 +26,11 @@ export default function Experience() {
                                 <span className="select-none text-md md:text-xl leading-relaxed text-purple-900 tracking-tighter font-bold">
                                     XLabs Security
                                 </span>
-                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-lg font-bold">
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-sm md:text-lg font-bold">
                                     <li>Html, ReactJS, TypeScript, Tailwind CSS, NextJS, Dart, Flutter, Docker, Cypress.io, Xcode.</li>
                                     <li>Android Studio, Front-End Development, Swagger API, Postman API, Git, Gitlab, API Development.</li>
                                 </ul>
-                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-lg font-bold">
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-sm md:text-lg font-bold">
                                     <li>Agile Methodologies, Trello, Linux, macOS, Visual Studio Code.</li>
                                 </ul>
                             </div>
@@ -52,7 +52,7 @@ export default function Experience() {
                                 <span className="select-none text-md md:text-xl leading-relaxed text-purple-900 tracking-tighter font-bold">
                                     Freelance
                                 </span>
-                                <ul className="pl-0 mt-1 text-blue-500 select-none text-[11px] md:text-lg font-bold">
+                                <ul className="pl-0 mt-1 text-blue-500 select-none text-sm md:text-lg font-bold">
                                     <li>Manual tests: Functional, Usability, Load, Localization, Accessibility, Regression.</li>
                                     <li>Test Case Testing of web and mobile apps, Android/iOS.</li>
                                 </ul>

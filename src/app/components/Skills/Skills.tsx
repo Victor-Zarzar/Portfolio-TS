@@ -44,7 +44,7 @@ export default function Skills() {
                     <Fade>
                         <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight text-3xl md:text-4xl text-blue-500 text-center">Skills</h1>
                     </Fade>
-                    <p className="text-sm leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
+                    <p className="text-sm leading-relaxed mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
                     <div className="flex mt-6 justify-center">
                         <LineColor />
                     </div>
