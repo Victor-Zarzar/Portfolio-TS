@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Slide } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button"
+import Whatsapp from '@/app/icons/socials/whatsapp';
 
 export default function Header() {
     return (
@@ -23,9 +24,14 @@ export default function Header() {
                         priority
                         width={200}
                         height={100}
-                        className='h-40 w-40 md:h-60 md:w-60 lg:h-60 lg:w-60 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-1 inline-block'
+                        className='h-40 w-40 md:h-60 md:w-60 lg:h-60 lg:w-60 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-1 inline-block cursor-pointer'
                     />
                 </div>
+            </div>
+            <div className="fixed bottom-20 right-4 md:right-10 z-100">
+                <Link href={'https://api.whatsapp.com/send?phone=5551986181044'} target="_blank">
+                    <Whatsapp />
+                </Link>
             </div>
             <div className="container px-10 md:px-36 space-x-4">
                 <Link href="https://github.com/Victor-Zarzar" target="_blank">
