@@ -8,7 +8,7 @@ import Whatsapp from '@/app/icons/socials/whatsapp';
 
 export default function Header() {
     return (
-        <div className="py-8 z-10 font-serif mt-40 md:mt-5">
+        <div className="py-8 z-10 font-serif mt-10 md:mt-5">
             <div className="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto">
                 <div className="w-full md:w-1/2 py-8">
                     <Slide>
